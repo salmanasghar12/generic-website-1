@@ -248,6 +248,19 @@ nav {
   cursor: pointer;
 }
 
+    
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu-exit {
@@ -301,6 +314,8 @@ nav {
       }
     }
   }
+      
+
 }
 
 @media only screen and (min-width: 1080px) {
@@ -310,6 +325,7 @@ nav {
     width: 1080px;
     margin: 0 auto;
   }
+
 
   section {
     padding: 10em 4em;
@@ -417,6 +433,20 @@ nav {
       height: 100%;
     }
   }
+
+    
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 }
 
 // @media only screen and (min-width: 1450px) {

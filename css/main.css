@@ -230,6 +230,21 @@ nav li a:hover {
   cursor: pointer;
 }
 
+.reveal {
+  position: relative;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu-exit {
@@ -386,6 +401,19 @@ nav li a:hover {
   }
   .contact-right iframe {
     height: 100%;
+  }
+  .reveal {
+    position: relative;
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+    opacity: 0;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  .reveal.active {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
